@@ -28,3 +28,13 @@ Install Nginx reverse proxy to make this application available
 
 `sudo apt-get update`
 `sudo apt install nginx`
+
+
+****SELF****
+
+#you need to copy front end file in /var/www/html/
+cd /etc/nginx/sites-enabled/
+location /api {
+        proxy_pass http://127.0.0.1:8000/api
+        }
+        
